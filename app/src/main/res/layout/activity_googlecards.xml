@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/actionb"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#3598db"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/tvFunnyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:typeface="sans"
+            android:text="Funny"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+    <View
+        android:layout_below="@id/actionb"
+        android:id="@+id/shadow"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/gradient_graydark2_trans_down" />
+
+    <ListView
+
+        android:id="@+id/activity_googlecards_listview"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/shadow"
+        android:background="#ecf0f1"
+        android:clipToPadding="false"
+        android:divider="@null"
+        android:dividerHeight="8dp"
+        android:fadingEdge="none"
+        android:fitsSystemWindows="true"
+        android:paddingTop="12dp"
+        android:paddingRight="12dp"
+        android:paddingLeft="12dp"
+        android:scrollbarStyle="outsideOverlay"
+        tools:ignore="overdraw" />
+
+</RelativeLayout>
